@@ -8,7 +8,7 @@ let validated = false;
 while (!validated) {
     let email = prompt("inserisci la tua email: ");
 
-    for (let i = 0; i < whitelist.length; i++) {
+    for (let i = 0; i < whitelist.length && validated == false; i++) {
         if (email == whitelist[i]) {
             validated = true;
             console.log("email accepted");
